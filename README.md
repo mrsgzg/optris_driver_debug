@@ -1,9 +1,13 @@
 ROS drivers for Optris thermal imagers
 
 This bag is to run optris thermal camera with ros.
+
 This code copy and change a little from https://github.com/evocortex/optris_drivers.
+
 When I use the ros driver http://wiki.ros.org/optris_drivers to run the thermal camera.
+
 I meet some troubles and bug.
+-----------------------------------------------------------------------------------------
 Error:
 A.
 [optris/optris_imager_node-1] process has died [pid 15942, exit code -6, cmd /home/pal/deployed_ws/lib/optris_drivers/optris_imager_node __name:=optris_imager_node __log:=/home/pal/.ros/log/dd7bea30-cfda-11e9-ac1c-d43b04def328/optris-optris_imager_node-1.log]. log file: /home/pal/.ros/log/dd7bea30-cfda-11e9-ac1c-d43b04def328/optris-optris_imager_node-1*.log
