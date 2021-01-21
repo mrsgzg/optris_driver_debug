@@ -73,4 +73,8 @@ you will meet error: IRArray redefine.
 So edit the /usr/include/libirimager/pif_config/IRPifConfig.h
 change "include 'IRArray.h'" to be a absolute path like :#include "/usr/include/libirimager/IRArray.h"
 and also add" #pragma once " at he begin of IRPifConfig.h.
-To solve this problem u need to edit the
+
+-------------------------------------------------------------------------------------------------
+another error when open the launch file: select error:
+https://github.com/evocortex/optris_drivers/issues/31#issuecomment-591352990
+here is the solvution
