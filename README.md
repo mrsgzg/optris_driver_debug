@@ -62,3 +62,15 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 in cmake list to find some include file.
+
+------------------------------------------------------------------------------------------
+I meet another error when i clone this ros bag to another device to run thermal camera.
+when you catkin_make it, you will meet some file needed in /usr/include/libirimager flord.
+so you need to copy /usr/include/libirimager/irdirectsdk_defs.h to /usr/include/libirimager/pif_config flord.
+but after that, you will meet maybe error: IRArray.h needed
+If you simply copy the .IRArray.h  to /usr/include/libirimager/pif_config flord.
+you will meet error: IRArray redefine.
+So edit the /usr/include/libirimager/pif_config/IRPifConfig.h
+change "include 'IRArray.h'" to be a absolute path like :#include "/usr/include/libirimager/IRArray.h"
+and also add" #pragma once " at he begin of IRPifConfig.h.
+To solve this problem u need to edit the
